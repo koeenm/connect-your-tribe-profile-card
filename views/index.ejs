@@ -1,14 +1,27 @@
 <%- include('./partials/head') %>
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
-
-  <p><%= data.name %></p>
-
-  <footer></footer>
-</article>
+<div class="center">
+  <article> 
+      <h1> <%= name %> </h1> 
+      <img src="<%= avatar %>" alt="profielfoto">
+          <div class="naam">
+      <p class="info"> voor- en achternaam</p>
+      <p> <%= name %> <%= prefix %> <%= surname %> </p>
+          </div>
+          <div class="naam">
+      <p class="info"> leeftijd </p>
+      <p> 18 </p>
+      </div>
+          <div class="naam">
+      <p class="info"> woonplaats </p>
+      <p> purmerend </p>
+      </div>   
+          <div class="naam">
+      <p class="info"> opleiding </p>
+      <p> fdnd </p>
+          </div>        
+  
+  </article>
+  </div>
 
 <%- include('./partials/foot') %>
