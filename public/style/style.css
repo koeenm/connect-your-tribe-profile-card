@@ -10,25 +10,17 @@ body {
   padding: 3em;
 }
 
-article {
-  background: linear-gradient(90deg, #d1b7c1 20%, #d8f6ec 60%, #f7e8b0 100%);
-  /* boxing */
-  padding: 1em; /* de ruimte tussen de tekst en de rand */
-  border-radius: 0.8em; /* de hoek van de article word een beetje ronder */
-  box-shadow: 0 0 10px 2px rgb(0, 0, 0); /* voegt een hele subtiele/lichte schaduw toe aan de article */
-  width: 25em;
-  height: 13em;
-}
+/* body {
 
-h1 {
+& h1 {
   /* box */
-  margin-top: -8px;
+  /* margin-top: -8px;
   margin-bottom: 8px;
   /* typografie */
-  color: #000000;
-  font-size: 2em;
-}
-
+  /* color: #000000;
+  font-size: 2em; */
+/* } */
+/* 
 img {
   border-radius: 0.8em;
   float: left;
@@ -37,9 +29,9 @@ img {
   width: 9.7em;
   height: 9.7em;
   box-shadow: 0 0 5px 1px black;
-}
+} */
 
-p {
+/* p {
   border-style: dashed;
   border-width: 1px;
   border-radius: 2px;
@@ -49,9 +41,9 @@ h2 {
   border-style: dashed;
   border-width: 1px;
   border-radius: 2px;
-}
+} */
 
-h2 {
+/* h2 {
   color: #4f72b1;
   font-size: 0.7em;
 }
@@ -66,8 +58,8 @@ p {
 article {
   margin: auto;
   width: 30%;
-}
-
+} */
+/* 
 p:hover {
   font-size: 110%;
 }
@@ -80,11 +72,64 @@ a {
 a:hover {
   color: #4f72b1;
   transition: 300ms;
-}
-
+} */
+/* 
 article {
   margin: auto;
   width: 30%;
+}
+
+}  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+article {
+  background: linear-gradient(90deg, #d1b7c1 20%, #d8f6ec 60%, #f7e8b0 100%);
+  /* boxing */
+  padding: 1em; /* de ruimte tussen de tekst en de rand */
+  border-radius: 0.8em; /* de hoek van de article word een beetje ronder */
+  box-shadow: 0 0 10px 2px rgb(0, 0, 0); /* voegt een hele subtiele/lichte schaduw toe aan de article */
+  margin: 0 auto;
+  width: 30em;
+  height: 100%;
+
+  display: flex;
+  gap: 1.5em;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 9.7em;
+  height: 9.7em;
+  object-fit: cover; /* dit zorgt ervoor dat het plaatje niet uitgerekt word */
+  border-radius: 0.8em;
+}
+
+p, h2 {
+  border: 1px dashed black;
+  font-size: 1em;
+  padding: 0.2em 0.4em;
+  width: 100%;
+}
+
+h2 {
+  color: #4f72b1;
+  font-weight: 400;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+div:nth-child(2) {
+  width: 100%;
 }
 
 

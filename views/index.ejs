@@ -1,24 +1,26 @@
 <%- include('./partials/head') %>
 
   <article> 
-      <h1> <%= name %> </h1> 
-      <img src="<%= avatar %>" alt="profielfoto">       
-      <h2> voor- en achternaam</h2>
-      <p> <%= name %> <%= prefix %> <%= surname %> </p>
-          
-          
-      <h2> github </h2>
-      <p> <%= github_handle %> </p>
-         
-          
-      <h2> opleiding </h2>
-      <p> fdnd </p>
-                  
-      
+    <div>
+        <h1> <%= name %> </h1> 
+
+        <img src="<%= avatar %>" alt="profielfoto"> 
+
+    </div>
+    <div>
+        <h2> voor- en achternaam</h2>
+        <p> <%= name %> <%= prefix %> <%= surname %> </p>
+            
+            
+        <h2> github </h2>
+        <p> <%= github_handle %> </p>
+                    
+        <h2> squad </h2>
+        <p> <%= squad_id %> </p>
+                      
         <h2> bio </h2>
         <p> <%= bio %> </p>
-      
-  
+      </div>
   </article>
 
 <%- include('./partials/foot') %>
