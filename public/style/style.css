@@ -86,27 +86,30 @@ article {
   margin: 0;
 }
 
-article {
+section {
   background: linear-gradient(90deg, #d1b7c1 20%, #d8f6ec 60%, #f7e8b0 100%);
   /* boxing */
   padding: 1em; /* de ruimte tussen de tekst en de rand */
   border-radius: 0.8em; /* de hoek van de article word een beetje ronder */
   box-shadow: 0 0 10px 2px rgb(0, 0, 0); /* voegt een hele subtiele/lichte schaduw toe aan de article */
   margin: 0 auto;
-  width: 30em;
+  width: 35em;
   height: 100%;
-
-  display: flex;
-  gap: 1.5em;
 }
 
 h1 {
   text-transform: uppercase;
+  font-size: 2em;
+}
+
+article {
+  display: flex;
+  gap: 0.5em;
 }
 
 img {
-  width: 9.7em;
-  height: 9.7em;
+  width: 10em;
+  height: 10em;
   object-fit: cover; /* dit zorgt ervoor dat het plaatje niet uitgerekt word */
   border-radius: 0.8em;
 }
@@ -120,12 +123,15 @@ p, h2 {
 
 h2 {
   color: #4f72b1;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 15em;
+  width: 100%;
 }
 
 div:nth-child(2) {
