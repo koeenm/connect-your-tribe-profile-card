@@ -117,7 +117,7 @@ img {
 p, h2 {
   border: 1px dashed black;
   font-size: 1em;
-  padding: 0.2em 0.4em;
+  padding: 0 0.4em;
   width: 100%;
 }
 
@@ -130,7 +130,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 15em;
+  height: 100%;
   width: 100%;
 }
 
